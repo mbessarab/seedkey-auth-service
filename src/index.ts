@@ -30,7 +30,7 @@ const appState: AppState = {
   isReady: false,
   isShuttingDown: false,
   startTime: new Date(),
-  version: process.env.APP_VERSION || '0.0.1',
+  version: process.env.APP_VERSION || '0.0.2',
 };
 
 // Metrics counters (simple implementation)
@@ -111,6 +111,26 @@ const fastify = Fastify({
 // ============================================================================
 // Plugins
 // ============================================================================
+
+// Allow empty body when Content-Type is application/json.
+// Some clients send Content-Type by default even for requests without a body (e.g. POST /logout),
+// and Fastify's default JSON parser throws FST_ERR_CTP_EMPTY_JSON_BODY.
+fastify.addContentTypeParser(
+  'application/json',
+  { parseAs: 'string' },
+  (request, body, done) => {
+    if (body === '' || body === undefined || body === null) {
+      done(null, {});
+      return;
+    }
+
+    try {
+      done(null, JSON.parse(body as string));
+    } catch (err) {
+      done(err as Error, undefined);
+    }
+  }
+);
 
 // CORS configuration
 const corsOrigins = process.env.CORS_ORIGINS?.split(',').map(o => o.trim()).filter(Boolean);

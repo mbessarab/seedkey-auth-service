@@ -1,6 +1,6 @@
 {
   "name": "seedkey-auth-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SeedKey Auth Service - Self-hosted passwordless authentication",
   "type": "module",
   "main": "dist/index.js",
