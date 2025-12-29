@@ -1,0 +1,52 @@
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Build output (we build inside Docker)
+dist
+
+# IDE and editor files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Git
+.git
+.gitignore
+
+# Docker files (no need to copy into build context)
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Tests
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Local configuration
+.env
+.env.*
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kubernetes/Helm manifests (deployed separately)
+deploy/
+helm/
+k8s/
+
+# Logs
+logs/
+*.log
+
