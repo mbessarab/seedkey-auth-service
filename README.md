@@ -147,11 +147,12 @@ npm run start:prod
 
 ### 🔧 Related Projects
 Also check out other repositories in the ecosystem:
-- `seedkey-sdk-client` — a library for working with the extension and sending requests to the backend.
-- `seedkey-sdk-server` — a library for implementing the service yourself.
-- `seedkey-db-migrations` — migrations for `seedkey-auth-service`.
-- `seedkey-auth-service-helm-chart` — a Helm Chart for deploying `seedkey-auth-service` + `seedkey-db-migrations`.
-- `seedkey-browser-extension` — a browser extension.
+- [seedkey-browser-extension](https://github.com/mbessarab/seedkey-browser-extension) — browser extension.
+- [seedkey-db-migrations](https://github.com/mbessarab/seedkey-db-migrations) — migrations for `seedkey-auth-service`.
+- [seedkey-auth-service](https://github.com/mbessarab/seedkey-auth-service) — self-hosted authentication service.
+- [seedkey-server-sdk](https://github.com/mbessarab/seedkey-server-sdk) — server-side library for implementing the service yourself.
+- [seedkey-client-sdk](https://github.com/mbessarab/seedkey-client-sdk) — client library for working with the extension.
+- [seedkey-auth-service-helm-chart](https://github.com/mbessarab/seedkey-auth-service-helm-chart) — Helm chart for deploying `seedkey-auth-service` + migrations.
 
 <a name="security"></a>
 ## 🛡️ Security Disclosure

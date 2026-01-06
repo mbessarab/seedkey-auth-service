@@ -146,12 +146,13 @@ npm run start:prod
 ```
 
 ### 🔧 Связные проекты
-Ознакомьтесь так же с другими репозиториями экосистемы:
-- `seedkey-sdk-client` — библиотека для работы с расширением и отправки запросов на бэкенд.
-- `seedkey-sdk-server` — библиотека  для самостоятельной реализации сервиса.
-- `seedkey-db-migrations` — миграции для `seedkey-auth-service`.
-- `seedkey-auth-service-helm-chart` — Helm Chart для разворачивания `seedkey-auth-service` + `seedkey-db-migrations`.
-- `seedkey-browser-extension` — браузерное расширение.
+Ознакомьтесь также с другими репозиториями экосистемы:
+- [seedkey-browser-extension](https://github.com/mbessarab/seedkey-browser-extension) — браузерное расширение.
+- [seedkey-db-migrations](https://github.com/mbessarab/seedkey-db-migrations) — миграции для `seedkey-auth-service`.
+- [seedkey-auth-service](https://github.com/mbessarab/seedkey-auth-service) — self-hosted сервис аутентификации.
+- [seedkey-server-sdk](https://github.com/mbessarab/seedkey-server-sdk) — серверная библиотека для самостоятельной реализации сервиса.
+- [seedkey-client-sdk](https://github.com/mbessarab/seedkey-client-sdk) — клиентская библиотека для работы с расширением.
+- [seedkey-auth-service-helm-chart](https://github.com/mbessarab/seedkey-auth-service-helm-chart) — Helm Chart для развёртывания `seedkey-auth-service` + миграций.
 
 <a name="security"></a>
 ## 🛡️ Раскрытие уязвимостей
